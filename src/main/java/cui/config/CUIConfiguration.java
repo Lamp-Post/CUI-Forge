@@ -23,7 +23,7 @@ public class CUIConfiguration
   private String cylinderGridColor = "#CC3333";
   private String cylinderEdgeColor = "#CC4C4C";
   private String cylinderPointColor = "#CC33CC";
-  private String updateFile = "https://raw.github.com/yetanotherx/WorldEditCUI/master/updates.yml";
+  private String updateFile = "https://raw.github.com/Lamp-Post/CUI-Forge/master/updates.yml";
   private Configuration config = null;
 
   public CUIConfiguration(File modFolder) {
