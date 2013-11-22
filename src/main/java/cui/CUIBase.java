@@ -34,7 +34,6 @@ public class CUIBase
   private CUIConfiguration configuration;
   private BaseRegion worldEditRegion;
   public boolean isCalled = false;
-  public EventManager eventManager;
 
   public CUIBase(IMod mod)
   {
@@ -113,9 +112,5 @@ public class CUIBase
 
   public void setWorldEditRegion(BaseRegion worldEditRegion) {
     this.worldEditRegion = worldEditRegion;
-  }
-  public EventManager getEventManager() {
-	return eventManager;
-	  
   }
 }
