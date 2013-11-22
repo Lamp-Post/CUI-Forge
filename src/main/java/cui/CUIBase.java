@@ -13,6 +13,7 @@ import cui.events.WorldEditEvent;
 import cui.events.WorldEditEventListener;
 import cui.events.WorldRenderEvent;
 import cui.events.WorldRenderEventListener;
+import cui.fevents.EventManager;
 import cui.fevents.HandlerList;
 import cui.fevents.Order;
 import cui.render.we.region.BaseRegion;
@@ -33,6 +34,7 @@ public class CUIBase
   private CUIConfiguration configuration;
   private BaseRegion worldEditRegion;
   public boolean isCalled = false;
+  public EventManager eventManager;
 
   public CUIBase(IMod mod)
   {
@@ -111,5 +113,9 @@ public class CUIBase
 
   public void setWorldEditRegion(BaseRegion worldEditRegion) {
     this.worldEditRegion = worldEditRegion;
+  }
+  public EventManager getEventManager() {
+	return eventManager;
+	  
   }
 }
